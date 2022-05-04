@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Water Gun Game</title>
+    <link rel="stylesheet"  href="src/Snakewatergun.css"/>
+</head>
+<body>
+    <header id="heading">
+       <center> <h1 id="heading1">Snake Water Gun Game</h1> </center>
+    </header>
+
+   <!--Player box starts-->
+
+    <div id="container1">
+      <div id="playername">Player Score: <span id="player">0</span>
+        <div id="turn1">Player Pick :  <span id="turn2"></span></div></div>
+          <img src="src/Images/snaket.jpg" alt="snake" onclick="snake()" class="snakeimg" />
+          <img src="src/Images/watert.jpg" alt="water" onclick="water()" class="waterimg" />
+         <img src="src/Images/gunt.jpg" alt="gun" onclick="gun()" class="gunimg"/>
+      <center><div id="win">Play !</div></center>
+    </div>
+   
+    <!--Computer box starts-->
+
+    <div id="container2">
+      <div id="computername">Computer Score : <span id="computer">0</span>
+      <div id="turn">Computer Picks :</div></div>
+        <img src="src/Images/snaket.jpg" alt="snake" onclick="alert(`Click Player's side`)"/>         
+        <img src="src/Images/watert.jpg" alt="water" onclick="alert(`Click Player's side`)"/>
+        <img src="src/Images/gunt.jpg" alt="gun" onclick="alert(`Click Player's side`)"/>
+      <center><div id="win1">Play !</div></center>
+    </div>
+  <br><br>
+   
+  <!--Result box starts-->
+
+    <div id="container3">
+     <center>
+       <div id="message">PLAY GAME !</div>
+       <div id="chance"></div>
+     </center>
+    </div>
+  
+    <script src="src/Snakewatergun.js" type="text/javascript"></script>
+</body>
+</html>
